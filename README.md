@@ -4,7 +4,7 @@ Watch a Chess.com account and get a [Peck](https://peckchess.com) review link af
 
 ## Run
 
-Requires Python 3.9+ on Linux or macOS. No extra packages or Chess.com login needed.
+Python 3.9+ · Linux / macOS
 
 ```sh
 python3 chess_review_notifier.py USERNAME
