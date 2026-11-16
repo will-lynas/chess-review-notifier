@@ -4,8 +4,6 @@ Watch a Chess.com account and get a [Peck](https://peckchess.com) review link af
 
 ## Run
 
-Python 3.9+ · Linux / macOS
-
 ```sh
 python3 chess_review_notifier.py USERNAME
 ```
@@ -40,3 +38,7 @@ Put `--notify-command` last. The script replaces `{url}` with the review link an
 Keep the same state file across restarts so previously reported games stay marked as seen.
 
 [Testing](TESTING.md)
+
+## Requirements
+
+Python 3.9+ · Linux / macOS
