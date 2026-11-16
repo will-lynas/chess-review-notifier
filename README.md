@@ -37,6 +37,18 @@ Put `--notify-command` last. The script replaces `{url}` with the review link an
 
 Keep the same state file across restarts so previously reported games stay marked as seen.
 
+## Example — Hermes notifications
+
+```sh
+python3 chess_review_notifier.py USERNAME \
+  --notify-command hermes send --to telegram:123456789 \
+  '[Review your game]({url})'
+```
+
+Sends a clickable review link through Hermes and records it in the Telegram conversation transcript.
+
+For background operation, run the command with launchd on macOS or systemd on Linux. On macOS, enable `RunAtLoad` and `KeepAlive` in the LaunchAgent plist.
+
 [Testing](TESTING.md)
 
 ## Requirements
