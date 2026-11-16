@@ -7,12 +7,10 @@ Watch a Chess.com account and get a [Peck](https://peckchess.com) review link af
 Requires Python 3.9+ on Linux or macOS. No extra packages or Chess.com login needed.
 
 ```sh
-git clone https://github.com/will-lynas/chess-review-notifier.git
-cd chess-review-notifier
-python3 chess_review_notifier.py sample-player
+python3 chess_review_notifier.py USERNAME
 ```
 
-Replace `sample-player` with your username. The first run skips existing games. Leave it running to print links for new games, or stop it with Ctrl-C.
+The first run skips existing games. Subsequent polls print review links for new games.
 
 It checks every 10 seconds after the previous poll finishes. Chess.com's API can lag behind, so links may take longer to arrive.
 
