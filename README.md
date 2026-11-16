@@ -1,6 +1,6 @@
 # chess-review-notifier
 
-Watch a Chess.com account and get a [Peck](https://peckchess.com) review link after each game.
+A daemon that sends [Peck](https://peckchess.com) review links after your Chess.com games.
 
 ## Run
 
