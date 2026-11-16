@@ -28,10 +28,16 @@ Put `--notify-command` last. The script replaces `{url}` with the review link an
 
 ## Options
 
-- `--interval 30`: wait 30 seconds between polls instead of 10.
-- `--once`: check once and exit.
-- `--state ./state/player.json`: choose where progress is saved. The default is `~/.local/state/chess-review-notifier/USERNAME.json`.
-- `--help`: show all options.
+| Argument / flag | What it does | Default |
+| --- | --- | --- |
+| `username` | Chess.com account to watch | Required |
+| `--interval SECONDS` | Wait between polls | `10` |
+| `--once` | Check once and exit | Off |
+| `--state FILE` | Save progress here | `~/.local/state/chess-review-notifier/USERNAME.json` |
+| `--timeout SECONDS` | HTTP socket timeout | `20` |
+| `--notify-timeout SECONDS` | Sender command timeout | `30` |
+| `--notify-command COMMAND ...` | Run a sender; put this flag last | Print links |
+| `-h`, `--help` | Show help | |
 
 Keep the same state file across restarts so previously reported games stay marked as seen.
 
